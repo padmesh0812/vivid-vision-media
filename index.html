@@ -23,9 +23,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+  rel="stylesheet"
+/>
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
@@ -118,6 +120,86 @@
         </div>
       </section>
 
+      <!--==================== CONTACT FORM ====================-->
+
+<section class="contact">
+
+    <div class="container contact-wrapper">
+
+        <!-- Left Side -->
+
+        <div class="contact-content">
+
+            <span class="section-tag">
+                GET IN TOUCH
+            </span>
+
+            <h2 class="section-title">
+                Let's Create Your
+                <span>Dream Story</span>
+            </h2>
+
+            <p class="contact-text">
+                Tell us about your wedding, event or creative project.
+                We'll connect with you and turn your moments into timeless memories.
+            </p>
+
+            <div class="contact-details">
+
+                <p>📞 +91 73480 40727 </p>
+
+                <p>✉ thevividvisionmedia@gmail.com </p>
+
+                <p>📍 Delhi, India</p>
+
+            </div>
+
+        </div>
+
+        <!-- Right Side Form -->
+
+        <form class="contact-form">
+
+            <div class="input-group">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                />
+
+            </div>
+
+            <div class="input-group">
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    required
+                />
+
+            </div>
+
+            <div class="input-group">
+
+                <textarea
+                    rows="6"
+                    placeholder="Tell Us About Your Event..."
+                    required
+                ></textarea>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
      <!--==================== FEATURED SERVICES ====================-->
 
 <!--==================== SERVICES ====================-->
@@ -146,7 +228,7 @@
 
             <!-- Card 1 -->
 
-            <article class="service-card">
+            <article class="service-card" data-aos="fade-up">
 
                 <div class="service-image">
 
@@ -173,7 +255,7 @@
 
             <!-- Card 2 -->
 
-            <article class="service-card">
+            <article class="service-card" data-aos="fade-up">
 
                 <div class="service-image">
 
@@ -200,7 +282,7 @@
 
             <!-- Card 3 -->
 
-            <article class="service-card">
+            <article class="service-card" data-aos="fade-up">
 
                 <div class="service-image">
 
@@ -332,11 +414,11 @@
 
                 <ul>
 
-                    <li>📞 +91 XXXXX XXXXX</li>
+                    <li>📞 +91 73480 40727 </li>
 
-                    <li>✉ hello@vividvisionmedia.com</li>
+                    <li>✉ thevividvisionmedia@gmail.com </li>
 
-                    <li>📍 Your City, India</li>
+                    <li>📍 Delhi, India</li>
 
                 </ul>
 
@@ -357,5 +439,15 @@
     </div>
 
 </footer>
+
+ <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+  duration: 1200,
+  once: true
+});
+</script>
+
   </body>
 </html>
