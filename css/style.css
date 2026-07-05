@@ -196,9 +196,6 @@ p {
    HEADER
 ========================================== */
 
-/*=========================================
-HEADER
-=========================================*/
 
 .header {
 
@@ -212,7 +209,13 @@ HEADER
 
   z-index: 1000;
 
-  padding: 18px 0;
+  height: 90px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 8px 0;
 
   backdrop-filter: blur(14px);
 
@@ -223,26 +226,42 @@ HEADER
 
  .navbar {
 
-  display: flex;
+   display: flex;
 
   justify-content: space-between;
 
   align-items: center;
 
-  padding: 0 20px;
+  padding: 8px 20px;
 }
 
 .logo {
 
-  font-size: 2rem;
+   display: flex;
 
-  font-weight: 800;
+  align-items: center;
 
-  letter-spacing: 3px;
+   height: 70px;
+}
 
-  color: white;
+.logo img {
 
-  text-transform: uppercase;
+  height: 140px;
+
+  width: auto;
+
+  object-fit: contain;
+
+  display: block;
+
+  transition: .4s ease;
+
+  margin-top: 10px;
+}
+
+.logo img:hover {
+
+  transform: scale(1.05);
 }
 
 .logo span {
