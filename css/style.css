@@ -1775,44 +1775,45 @@ padding:120px 0;
 
 display:grid;
 
-grid-template-columns:repeat(2,1fr);
+grid-template-columns:repeat(3,1fr);
 
-gap:35px;
+gap:30px;
 
 margin-top:70px;
 }
 
 .why-card{
+ 
+    position:relative;
 
-padding:40px;
+    height:340px;
 
-border-radius:25px;
+    border-radius:25px;
 
-background:
-linear-gradient(#111,#111),
-linear-gradient(135deg,#ff9933,#ffcc80);
+    overflow:hidden;
 
-background-origin:border-box;
+    border:2px solid rgba(255,153,51,.35);
 
-background-clip:padding-box,border-box;
+    background-size:cover;
 
-border:2px solid transparent;
+    background-position:center;
 
-transition:.45s;
+    transition:.5s;
+
 }
 
 .why-card:hover{
 
 transform:translateY(-10px);
 
-box-shadow:0 0 35px rgba(255,153,51,.30);
+box-shadow:0 0 35px rgba(255,153,51,.35);
 }
 
 .why-icon{
 
 font-size:3rem;
 
-margin-bottom:20px;
+margin-bottom:15px;
 }
 
 .why-card h3{
@@ -1825,6 +1826,80 @@ margin-bottom:15px;
 color:var(--gray);
 
 line-height:1.8;
+}
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    padding:30px;
+
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.92),
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.15)
+    );
+
+}
+
+.overlay h3{
+
+    color:#fff;
+
+    margin-bottom:12px;
+
+}
+
+.overlay p{
+
+    color:#ddd;
+
+    line-height:1.7;
+
+}
+
+.card1{
+
+background-image:url("../images/hero/img7.jpg");
+
+}
+
+.card2{
+
+background-image:url("../images/hero/img8.jpg");
+
+}
+
+.card3{
+
+background-image:url("../images/hero/img9.jpg");
+
+}
+
+.card4{
+
+background-image:url("../images/hero/img11.jpg");
+
+}
+
+.card5{
+
+background-image:url("../images/hero/img10.jpg");
+
+}
+
+.card6{
+
+background-image:url("../images/hero/img12.jpg");
+
 }
 
 @media(max-width:992px){
@@ -2047,6 +2122,26 @@ font-size:2rem;
 .about-cta h2{
 
 font-size:2.4rem;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.why-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.why-grid{
+
+grid-template-columns:1fr;
 
 }
 
